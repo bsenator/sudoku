@@ -1,0 +1,77 @@
+/* 
+body {
+  background-color: rgba(166,211,227,255); 
+  text-align: center;
+  margin: 50px;
+}
+
+body h1{
+  font-size: 54px;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: separate;
+  margin: 20px auto;
+}
+
+th, td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+   
+input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2em;
+  text-align: center;
+} */
+body {
+  background-color: rgba(166, 211, 227, 255);
+  text-align: center;
+  margin: 50px;
+}
+
+body h1 {
+  font-size: 54px;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  border: 10px solid #333; /* Çerçeve rengi ve kalınlığını ayarlayın */
+}
+
+th, td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid yellow; /* Hücre sınırlarını ayarlayın */
+}
+
+/* Custom styles for specific rows and columns */
+th:nth-child(3n), td:nth-child(3n) {
+  border-right-width: 8px; /* Increase border thickness for every third column */
+}
+
+th:nth-child(3n+1), td:nth-child(3n+1) {
+  border-left-width: 8px; /* Increase border thickness for the first column in every group of three columns */
+}
+
+tr:nth-child(3n) td {
+  border-bottom-width: 4px; /* Increase border thickness for every third row */
+}
+
+tr:nth-child(3n+1) td {
+  border-top-width: 4px; /* Increase border thickness for the first row in every group of three rows */
+}
+
+input {
+  width: 100%;
+  height: 100%;
+
+  font-size: 1.2em;
+  text-align: center;
+}
